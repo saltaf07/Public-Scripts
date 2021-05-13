@@ -8,6 +8,7 @@ import text from './parts/text';
 import timestamp from './parts/timestamp';
 import structuredText from './parts/structured-text';
 import number from './parts/number';
+import contributorsWithTitle from './parts/contributorsWithTitle';
 
 const Page = {
   Page: {
@@ -36,6 +37,7 @@ const Page = {
       ),
     }),
   },
+  Contributors: contributorsWithTitle(),
   // TODO: (drupal migration) Remove this
   Migration: {
     drupalPromoImage: link('Drupal promo image', 'web'),

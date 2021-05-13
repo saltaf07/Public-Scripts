@@ -251,7 +251,10 @@ export class Page extends Component<Props> {
             />
           }
           RelatedContent={[...Siblings, ...Children]}
-          contributorProps={{ contributors: page.contributors }}
+          contributorProps={{
+            contributors: page.contributors,
+            titleOverride: page.contributorsTitle,
+          }}
           seasons={page.seasons}
         />
       </PageLayout>
