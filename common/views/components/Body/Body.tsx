@@ -322,7 +322,7 @@ const Body: FunctionComponent<Props> = ({
             slice.type === 'text' &&
             slice.weight === 'featured'
           ) && (
-            <SpacingComponent>
+            <SpacingComponent isText={slice.type === 'text'}>
               <div>
                 {slice.type === 'text' && (
                   <LayoutWidth width={minWidth}>
